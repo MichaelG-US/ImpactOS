@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thanks — ImpactOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .thanks-wrap {
+      min-height: 80vh;
+      display: flex; flex-direction: column;
+      align-items: flex-start; justify-content: center;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 var(--gut);
+    }
+    .thanks-wrap h1 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(40px, 7vw, 96px);
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin: 0 0 24px;
+    }
+    .thanks-wrap p {
+      max-width: 52ch;
+      color: var(--ink-soft);
+      font-size: 18px;
+      margin: 0 0 32px;
+    }
+    .receipt {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--ink-dim);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border: 1px dashed var(--line);
+      padding: 14px 18px;
+      border-radius: 4px;
+      margin-bottom: 36px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="orbits" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28" role="img" aria-label="ImpactOS mark">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.4" />
+          <circle cx="16" cy="16" r="3.2" fill="currentColor" />
+          <path d="M16 2 L16 30" stroke="currentColor" stroke-width="1.2" />
+          <path d="M2 16 L30 16" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 3" />
+        </svg>
+      </span>
+      <span class="brand-name">ImpactOS</span>
+    </a>
+    <nav class="nav">
+      <a href="/" class="nav-cta">Back to site</a>
+    </nav>
+  </header>
+
+  <main class="thanks-wrap">
+    <span class="receipt">// pilot-request · received</span>
+    <h1>Got it. Talk soon.</h1>
+    <p>
+      Your pilot request landed with the team. We read every workflow personally — and reply within five working days, usually with a prototype path or a short call to dig in further.
+    </p>
+    <a class="btn btn-ghost" href="/">Return to ImpactOS</a>
+  </main>
+</body>
+</html>
